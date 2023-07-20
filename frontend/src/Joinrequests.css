@@ -1,0 +1,30 @@
+.request-container {
+    background-color: #D282A6;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+    font-size: 2rem;
+    width: 800px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.request-buttons {
+    margin-top: 30px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+}
+
+.khaali
+{
+    height: 200px;
+}

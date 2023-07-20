@@ -1,0 +1,172 @@
+body,
+.signin {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 1px;
+  letter-spacing: 1px;
+}
+
+.Reg-Form {
+  position: relative;
+  height: 750px;
+  width: 500px;
+  margin: auto;
+  margin-top: 3%; 
+  padding: 10px 40px;
+  background-size: cover;
+  box-shadow: 0px 80px 60px -5px #222222;
+  opacity: 90%;
+  border-radius: 20px;
+  color: #000;
+  font-family: Poppins;
+  background-color: transparent;
+}
+
+form {
+  padding-top: px;
+}
+
+
+span {
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0.4; 
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  transition: all 0.5s ease-in-out;
+}
+
+.text {
+  border: none;
+  width: 80%;
+  padding: 10px 20px;
+  display: block;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(9, 3, 3, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+align-items: center;
+}
+
+.text:focus {
+  outline: 0;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text:focus + span {
+  opacity: 0.6;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(40, 37, 37);
+}
+
+
+input {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 10px;
+}
+
+label {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.reg-box
+{
+  width: 300px;
+  height: 70px;
+}
+
+.inputclass {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+
+/* .signin {
+  background-color: #1161ed;
+  color: #FFF;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+} */
+
+/* .signin:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+
+.signin:focus {
+  outline: none;
+} */
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 85px;
+  position: relative;
+}
+
+a {
+  text-align: center;
+  display: block;
+  top: 120px;
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.reg-bt{
+  opacity: 80%;
+  color: black;
+  width: 40%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: Poppins;
+  height: 40px;
+}
+
+.reg
+{
+  opacity: 80%;
+  width: 50%;
+  padding: 10px 0px;
+  color: #000;
+  border-radius: 10px;
+  margin-left: 20px;
+  font-family: Poppins;
+  height: 40px;
+}
+
+.labelhai
+{
+  font-size: 14px;
+  color: black;
+  display: inline-block;
+}

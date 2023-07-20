@@ -1,0 +1,181 @@
+.search-container {
+  display: flex;
+  margin-left: 30%;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  width: 40%;
+  height: 50px;
+  margin-top: 200px;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #b3b3b3;
+  color: black;
+  margin-right: 10px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  width: 100%;
+  background-color: white;
+}
+
+.search-input::placeholder {
+  color: black;
+}
+
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subgreddiit-container {
+  width: 20%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 2px 2px 10px #ccc;
+  text-align: left;
+  background-color: #DAA89B;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 20px;
+}
+
+.follower_class
+{
+  font-size: 15px;
+}
+
+.creationdate
+{
+  font-size: 15px;
+
+}
+
+
+
+.bt {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.subgreddiit-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.subgreddiit-description {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.subgreddiit-tags {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.subgreddiit-banned {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 15px;
+}
+
+.delete-button {
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.leave-button {
+  margin-top: 10px;
+  background-color: #0E273C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+
+.open-button {
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.join-button {
+  margin-top: 10px;
+  background-color: #1F5673;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.joinedsub {
+  margin-top: 50px;
+}
+
+.sort-button
+{
+  width: 50px;
+  background-color: black;
+}
+
+
+.subgredbuttonsforsort
+  {
+    margin-left: 80%;
+    color: white;
+    margin-top: 100px;
+    height: 50px;
+    font-size: 1.8rem;
+  }
+
+.leavedisabled {
+    background-color: gray;
+    color: white;
+}
+
+.leaveenabled {
+    background-color: #0E273C;
+    color: white;
+}
+
+
+.join-button[disabled]
+{
+  background-color: gray;
+  color: white;
+}
+
+.joinenabled
+{
+  background-color: #1F5673;
+  color: white;
+
+}

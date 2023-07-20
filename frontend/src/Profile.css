@@ -1,0 +1,234 @@
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.p{
+    font-size: 20px;
+}
+
+.profile-edit-btn {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.3rem;
+    padding: 0 2.4rem;
+    margin-left: 2rem;
+    color: black;
+}
+
+
+.profile-stats li:last-of-type {
+    margin-right: 0;
+} .profile-settings-btn {
+    font-size: 2rem;
+    margin-left: 1rem;
+} */
+
+.Followers
+{
+    font-family: Poppins;
+    margin-left: 10%;
+    background-color: transparent;
+    color: black;
+    margin-top: 0px;
+    border-color: white;
+}
+.Following
+{
+    font-family: Poppins;
+    margin-left: 10%;
+    background-color: transparent;
+    color: black;
+    margin-top: 10px;
+    border-color: white;
+}
+
+.logout
+{
+    font-size: 1.4rem;
+    line-height: 1.8;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.3rem;
+    padding: 0 2.4rem;
+    margin-left: 80%;
+}
+
+ /* body{
+    margin: 0;
+    padding: 0;
+    background-color:#ffccbc;
+  } 
+   */
+  .profile-card{
+    border-radius: 20px;
+    width: 1000px;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    flex: 1;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 70px;
+   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+   font-size: 1.8rem;
+   margin-top: 5%;
+    }
+  
+  .profile-card header{
+    border-right: 1px solid #d32f2f ;
+    width: 600px;
+  }
+  
+  .profile-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    border: 8px solid transparent;
+    transition: .4s;
+    }
+  
+  .profile-card img:hover{
+    border: 8px solid #e57373 ;
+  }
+  
+  .profile-bio{
+    background-color: #ef9a9a ;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-bio p{
+    color: white;
+    font-family: Arial;
+    font-size:20px;
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .heart-icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+   
+  }
+  
+  .fa-heart{
+    display: flex;
+    color: white;
+    font-size: 50px;
+    transition: .4s;
+    
+  }
+  
+  ul{
+    list-style-type: none;
+    display: flex;
+  }
+  
+  ul li{
+    
+    margin: 30px;
+  }
+  
+  .fa-instagram{
+   color: white ;
+   transition: .4s;
+    }
+  .fa-instagram:hover{
+    color: #e53935 ;
+    cursor: pointer;
+  }
+  
+  .fa-facebook-square{
+   color: white ;
+    transition: .4s;
+  }
+  .fa-facebook-square:hover{
+    color: #e53935 ;
+    cursor: pointer;
+  }
+  .fa-linkedin{
+    color: white;
+    transition: .4s;
+  }
+  .fa-linkedin:hover{
+    color: #e53935 ;
+    cursor: pointer;
+  }
+
+
+
+  .profile-social-links
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .followers-following-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .followers-container,
+  .following-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .followers-button,
+  .following-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .followers-button:hover,
+  .following-button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .modal {
+    text-align: center;
+  }
+  
+  .modal p {
+    margin: 0;
+  }
+  
+  .modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+  
+  
+
+
+
+
+
+
+
