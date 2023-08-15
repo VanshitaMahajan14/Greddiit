@@ -17,7 +17,7 @@ const Greddiitpage = () => {
 
     useEffect(() => {
         if (localStorage.getItem("logged") === "false" || (!localStorage.getItem("logged"))) {
-            console.log("lae chak mai agya")
+           //back to login page if user not logged
             navigate("/");
         }
 
@@ -76,7 +76,7 @@ const Greddiitpage = () => {
     const [postId, setPostId] = useState("")
 
     useEffect(() => {
-        const fetchData = async () => {                           //fetching Greddiit info to display on left side
+        const fetchData = async () => {                           //fetching Greddiit info to display on left side of page
             const res = await fetch(`http://localhost:8000/Newgreddiit/${greddiitId}`, {
                 method: "GET",
                 headers: {
@@ -95,7 +95,7 @@ const Greddiitpage = () => {
     const moderator = greddiit.greddiitowner
 
     useEffect(() => {
-        const fetchposts = async () => {                           //fetching posts info to display on right side
+        const fetchposts = async () => {                           //fetching posts info to display on right side of page
             const res = await fetch(`http://localhost:8000/Newpost`, {
                 method: "GET",
                 headers: {
@@ -127,6 +127,9 @@ const Greddiitpage = () => {
         fetchcomments();
     }, [])
 
+
+    //increments the likes on the post if a user likes it
+    
     const handleupvote = (post) => {
         if (post.liked.includes(localStorage.getItem("currentuserlogged"))) {
             alert("You have already upvoted this post")
@@ -137,6 +140,8 @@ const Greddiitpage = () => {
         console.log(newlike)
         fetch(`http://localhost:8000/Newpost-like/${id}`, {
             method: "PUT",
+            
+            //push the user into the array of users that have liked the post
             body: JSON.stringify({ $push: { liked: newlike } }),
             headers: {
                 "Content-Type": "application/json",
@@ -153,7 +158,7 @@ const Greddiitpage = () => {
             });
     }
 
-
+    //increments the dowvotes on a post if a user downvotes the post
     const handledownvote = (post) => {
         if (post.disliked.includes(localStorage.getItem("currentuserlogged"))) {
             alert("You have already downvoted this post")
@@ -163,6 +168,7 @@ const Greddiitpage = () => {
         const newdislike = localStorage.getItem("currentuserlogged")
         fetch(`http://localhost:8000/Newpost-dislike/${id}`, {
             method: "PUT",
+            //push the new user into array of users that have downvoted the post
             body: JSON.stringify({ $push: { disliked: newdislike } }),
             headers: {
                 "Content-Type": "application/json",
@@ -221,7 +227,7 @@ const Greddiitpage = () => {
             console.error(error);
         }
     }
-
+     //adds the user to the list of users who have saved the post
     const handlesavedposts = (post) => {
         const id = post._id
         if (!post.saved.includes(localStorage.getItem("currentuserlogged"))) {
