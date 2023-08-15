@@ -12,8 +12,8 @@ const Dashboard = () => {
 
 	useEffect(() => {
 		if (localStorage.getItem("logged") === "false" || (!localStorage.getItem("logged"))) {
-			console.log("lae chak mai agya")
 			navigate("/");
+			//navigate back to login page if not logged in
 		}
 
 	}, []);
