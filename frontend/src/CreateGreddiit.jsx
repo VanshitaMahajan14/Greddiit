@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 const CreateGreddiit = () => {
    //const navigate = useNavigate();
 
+   //the details that the Greddiit owner has to input when creating the Greddiit
    const [formData, setFormData] = useState({
       name: "",
       description: "",
@@ -25,6 +26,7 @@ const CreateGreddiit = () => {
       try {
          const formDataWithFollowers = { 
             ...formData, 
+            //additional details required to be stored along with user entered details
             created_at: new Date().toISOString(), 
             followers: [localStorage.getItem("currentuserlogged")], 
             greddiitowner: localStorage.getItem("currentuserlogged"),
@@ -32,7 +34,7 @@ const CreateGreddiit = () => {
             leave: "",
          };
          
-
+        
          const response = await fetch("http://localhost:8000/Newgreddiit", {
             method: "POST",
             headers: {
@@ -61,6 +63,7 @@ const CreateGreddiit = () => {
 };
 
    return (
+      //creating division for the greddiit form
       <div class="greddiit-form">
          <h1 class="formname">New Greddiit</h1>
          <form onSubmit={handleSubmit}>
